@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/logica.iml" filepath="$PROJECT_DIR$/logica.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orientacao_objeto.iml" filepath="$PROJECT_DIR$/orientacao_objeto.iml" />
     </modules>
   </component>
 </project>
