@@ -25,15 +25,14 @@ public class Main {
 //        System.out.println("Saldo após o saque: " + contaHugo.saldo);
 
         Conta contaGiovanni = new Conta();
-        contaGiovanni.titular = "Giovanni";
-        contaGiovanni.saldo = 5000;
-        contaGiovanni.limite = 10000;
-        contaGiovanni.numero = "00004";
+        contaGiovanni.setTitular("Giovanni");
+        contaGiovanni.setLimite(10000);
+        contaGiovanni.setNumero("00004");
 
-        System.out.println("Saldo do Hugo antes da transferencia: " + contaHugo.saldo);
-        System.out.println("Saldo do Giovanni antes da transferencia: " + contaGiovanni.saldo);
+        System.out.println("Saldo do Hugo antes da transferencia: " + contaHugo.getSaldo());
+        System.out.println("Saldo do Giovanni antes da transferencia: " + contaGiovanni.getSaldo());
         contaGiovanni.transfere(contaHugo, 12000);
-        System.out.println("Saldo do Hugo depois da transferencia: " + contaHugo.saldo);
-        System.out.println("Saldo do Giovanni depois da transferencia: " + contaGiovanni.saldo);
+        System.out.println("Saldo do Hugo depois da transferencia: " + contaHugo.getSaldo());
+        System.out.println("Saldo do Giovanni depois da transferencia: " + contaGiovanni.getSaldo());
     }
 }
