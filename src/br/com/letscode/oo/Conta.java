@@ -1,10 +1,10 @@
 package br.com.letscode.oo;
 
 public class Conta extends Object {
-    private String numero;
+    protected String numero;
     protected double saldo; // BigDecimal
-    private String titular;
-    private double limite;
+    protected String titular;
+    protected double limite;
 
     public Conta(String numero, double saldo, String titular, double limite) {
         this.numero = numero;
@@ -45,11 +45,11 @@ public class Conta extends Object {
 
     @Override
     public String toString() {
-        return "Conta{" +
-                "numero='" + numero + '\'' +
-                ", saldo=" + saldo +
-                ", titular='" + titular + '\'' +
-                ", limite=" + limite +
+        return "Conta {" +
+                "numero da conta='" + this.numero + '\'' +
+                ", saldo da conta=" + this.saldo +
+                ", titular='" + this.titular + '\'' +
+                ", limite=" + this.limite +
                 '}';
     }
 
