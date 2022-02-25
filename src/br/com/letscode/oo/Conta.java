@@ -1,16 +1,27 @@
 package br.com.letscode.oo;
 
+import br.com.letscode.enums.TipoContaEnum;
+
 public class Conta extends Object {
     protected String numero;
     protected double saldo; // BigDecimal
     protected String titular;
     protected double limite;
+    protected String tipoContaEnum;
 
     public Conta(String numero, double saldo, String titular, double limite) {
         this.numero = numero;
         this.saldo = saldo;
         this.titular = titular;
         this.limite = limite;
+    }
+
+    public Conta(String numero, double saldo, String titular, double limite, String tipoContaEnum) {
+        this.numero = numero;
+        this.saldo = saldo;
+        this.titular = titular;
+        this.limite = limite;
+        this.tipoContaEnum = tipoContaEnum;
     }
 
     public String getNumero() {
@@ -39,6 +50,14 @@ public class Conta extends Object {
 
     public void setLimite(double limite) {
         this.limite = limite;
+    }
+
+    public String getTipoContaEnum() {
+        return tipoContaEnum;
+    }
+
+    public void setTipoContaEnum(String tipoContaEnum) {
+        this.tipoContaEnum = tipoContaEnum;
     }
 
     public Conta() { }
